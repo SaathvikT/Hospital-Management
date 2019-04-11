@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="484.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Control">
+   <children>
+      <Pane fx:id="pane1" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="484.0" fitWidth="750.0" pickOnBounds="true">
+               <image>
+                  <Image url="@picture1.jpeg" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <Pane fx:id="pane2" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="484.0" fitWidth="750.0" pickOnBounds="true">
+               <image>
+                  <Image url="@picture2.jpeg" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <Pane fx:id="pane3" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="484.0" fitWidth="750.0" pickOnBounds="true">
+               <image>
+                  <Image url="@picture3.jpeg" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <Pane fx:id="pane4" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="484.0" fitWidth="750.0" pickOnBounds="true">
+               <image>
+                  <Image url="@picture4.jpeg" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <Pane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane layoutX="419.0" layoutY="73.0" prefHeight="360.0" prefWidth="275.0" style="-fx-background-color: #fff; -fx-background-radius: 50px;">
+               <children>
+                  <JFXTextField fx:id="tf1" focusColor="#152146" labelFloat="true" layoutX="55.0" layoutY="87.0" opacity="0.43" prefHeight="30.0" prefWidth="166.0" promptText="Username" unFocusColor="#bababa83">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXPasswordField fx:id="pass1" focusColor="#152146" labelFloat="true" layoutX="55.0" layoutY="134.0" opacity="0.48" prefHeight="25.0" prefWidth="166.0" promptText="Password" unFocusColor="#b0acac80">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXPasswordField>
+                  <Label fx:id="label1" layoutX="55.0" layoutY="45.0" prefHeight="30.0" prefWidth="166.0" textFill="#e80808" wrapText="true" />
+                  <JFXButton buttonType="RAISED" layoutX="87.0" layoutY="189.0" onAction="#btnAction" prefHeight="38.0" prefWidth="101.0" ripplerFill="#797474" style="-fx-background-color: #00ECA8; -fx-background-radius: 20px;" text="Sign In" textAlignment="CENTER">
+                     <font>
+                        <Font name="Microsoft JhengHei UI Light" size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <Label alignment="CENTER" layoutX="35.0" layoutY="258.0" prefHeight="30.0" prefWidth="166.0" text="No Account?" textAlignment="CENTER" />
+                  <Hyperlink layoutX="151.0" layoutY="262.0" onAction="#hyperAction1" text="Sign Up" textFill="#0bbdee" />
+                  <Hyperlink layoutX="108.0" layoutY="323.0" text="About Us" textFill="#979797" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <AnchorPane fx:id="imagePane" prefHeight="484.0" prefWidth="750.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="484.0" fitWidth="750.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Doctor.jpeg" />
+               </image>
+               <effect>
+                  <GaussianBlur />
+               </effect>
+            </ImageView>
+            <Separator layoutX="325.0" layoutY="32.0" opacity="0.45" orientation="VERTICAL" prefHeight="420.0" prefWidth="101.0">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant color="#b2afaf" />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Separator>
+            <JFXButton buttonType="RAISED" layoutX="128.0" layoutY="215.0" onAction="#patientAction" prefHeight="54.0" prefWidth="120.0" style="-fx-background-color: #fff; -fx-background-radius: 30px;" text="PATIENT">
+               <font>
+                  <Font name="Microsoft JhengHei UI Light" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Glow level="0.74" />
+               </effect>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="501.0" layoutY="215.0" onAction="#doctorAction" prefHeight="54.0" prefWidth="120.0" style="-fx-background-color: #fff; -fx-background-radius: 30px;" text="DOCTOR">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Glow level="0.54" />
+               </effect>
+            </JFXButton>
+            <ImageView fitHeight="38.0" fitWidth="50.0" layoutX="27.0" layoutY="13.0" onMouseClicked="#arrowAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@arrow.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Pane fx:id="patientPane" prefHeight="484.0" prefWidth="750.0" style="-fx-background-color: #fff;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane layoutX="1.0" prefHeight="71.0" prefWidth="750.0" style="-fx-background-color: #00D390;">
+               <children>
+                  <Label alignment="CENTER" layoutX="202.0" layoutY="14.0" prefHeight="45.0" prefWidth="367.0" text="PATIENT APPLICATION FORM" textFill="WHITE">
+                     <font>
+                        <Font name="Microsoft JhengHei UI Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="58.0" fitWidth="57.0" layoutY="8.0" onMouseClicked="#arrowAction2" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@arrow.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Label alignment="CENTER" layoutX="48.0" layoutY="85.0" prefHeight="30.0" prefWidth="136.0" text="Personal Details" textFill="#a8a8a8">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <JFXTextField focusColor="#00d390" labelFloat="true" layoutX="68.0" layoutY="122.0" prefHeight="25.0" prefWidth="166.0" promptText="Name" unFocusColor="#939090fa">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField focusColor="#00d390" labelFloat="true" layoutX="68.0" layoutY="166.0" prefHeight="30.0" prefWidth="166.0" promptText="Age" unFocusColor="#939090fa">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXToggleButton layoutX="66.0" layoutY="242.0" prefHeight="58.0" prefWidth="101.0" text="MALE" />
+            <Label layoutX="68.0" layoutY="219.0" prefHeight="30.0" prefWidth="109.0" text="Gender" />
+            <JFXToggleButton layoutX="167.0" layoutY="242.0" prefHeight="30.0" prefWidth="120.0" text="FEMALE" />
+            <JFXTextField focusColor="#00d390" labelFloat="true" layoutX="68.0" layoutY="300.0" prefHeight="25.0" prefWidth="166.0" promptText="Mobile No." unFocusColor="#939090fa">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField focusColor="#00d390" labelFloat="true" layoutX="66.0" layoutY="353.0" prefHeight="25.0" prefWidth="166.0" promptText="Enter your email" unFocusColor="#939090fa">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextArea layoutX="66.0" layoutY="405.0" prefHeight="45.0" prefWidth="250.0" promptText="Address">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextArea>
+            <Label alignment="CENTER" layoutX="426.0" layoutY="85.0" prefHeight="30.0" prefWidth="136.0" text="Account Details" textFill="#a8a8a8">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <JFXTextField focusColor="#00d390" labelFloat="true" layoutX="440.0" layoutY="122.0" prefHeight="25.0" prefWidth="166.0" promptText="Username" unFocusColor="#939090fa">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField labelFloat="true" layoutX="440.0" layoutY="181.0" prefHeight="25.0" prefWidth="166.0" promptText="Start your password with PAT" />
+            <JFXButton buttonType="RAISED" layoutX="440.0" layoutY="249.0" prefHeight="45.0" prefWidth="128.0" ripplerFill="#949191" style="-fx-border-color: #00D390; -fx-border-radius: 20px;" text="Submit" textFill="#00d390">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane fx:id="doctorPane" prefHeight="484.0" prefWidth="750.0" style="-fx-background-color: #ffff;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane prefHeight="87.0" prefWidth="750.0" style="-fx-background-color: #007CE3;">
+               <children>
+                  <Label alignment="CENTER" layoutX="204.0" layoutY="17.0" prefHeight="54.0" prefWidth="343.0" text="DOCTOR REGISTRATION" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Microsoft JhengHei UI" size="22.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="45.0" fitWidth="50.0" layoutX="14.0" layoutY="22.0" onMouseClicked="#arrowAction3" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@arrow.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <JFXTextField focusColor="#007ce3" labelFloat="true" layoutX="59.0" layoutY="142.0" opacity="0.4" prefHeight="30.0" prefWidth="166.0" promptText="Enter Name" />
+            <JFXTextField focusColor="#007ce3" labelFloat="true" layoutX="59.0" layoutY="212.0" opacity="0.4" prefHeight="30.0" prefWidth="166.0" promptText="Doctor  ID" />
+            <JFXTextField focusColor="#007ce3" labelFloat="true" layoutX="59.0" layoutY="283.0" opacity="0.4" prefHeight="30.0" prefWidth="166.0" promptText="Speciality" />
+            <JFXTextField focusColor="#007ce3" labelFloat="true" layoutX="454.0" layoutY="142.0" opacity="0.4" prefHeight="30.0" prefWidth="166.0" promptText="Mobile No." />
+            <JFXTextField focusColor="#007ce3" labelFloat="true" layoutX="454.0" layoutY="212.0" opacity="0.4" prefHeight="30.0" prefWidth="166.0" promptText="Email" />
+            <JFXButton buttonType="RAISED" layoutX="311.0" layoutY="370.0" prefHeight="45.0" prefWidth="128.0" style="-fx-border-radius: 20px; -fx-border-color: #007ce3;" text="Submit" textFill="#007ce3">
+               <font>
+                  <Font name="Microsoft JhengHei UI" size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane fx:id="LoginPane1" prefHeight="484.0" prefWidth="750.0" style="-fx-background-color: #fff;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="484.0" fitWidth="750.0" pickOnBounds="true">
+               <image>
+                  <Image url="@picture5.jpeg" />
+               </image>
+            </ImageView>
+            <Pane opacity="0.59" prefHeight="484.0" prefWidth="750.0" style="-fx-background-color: #E300E3;">
+               <children>
+                  <Label layoutX="72.0" layoutY="59.0" prefHeight="54.0" prefWidth="428.0" text="Welcome,Sathvik" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="MS Outlook" size="28.0" />
+                     </font></Label>
+                  <Label layoutX="128.0" layoutY="122.0" prefHeight="54.0" prefWidth="428.0" text="Book  Your  Appointment" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <JFXTimePicker fx:id="time" defaultColor="#e300e3" layoutX="128.0" layoutY="242.0" promptText="Pick a time" style="-fx-background-color: #fff;" />
+                  <JFXRadioButton fx:id="ortho" layoutX="128.0" layoutY="349.0" prefHeight="25.0" prefWidth="171.0" style="-fx-background-color: #fff;" text="ORTHOPEDIC" textFill="#e300e3">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </JFXRadioButton>
+                  <JFXRadioButton fx:id="pulmo" layoutX="329.0" layoutY="349.0" prefHeight="25.0" prefWidth="171.0" style="-fx-background-color: #fff;" text="PULMONARY" textFill="#e300e3">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </JFXRadioButton>
+                  <JFXRadioButton fx:id="pedia" layoutX="539.0" layoutY="349.0" prefHeight="25.0" prefWidth="171.0" style="-fx-background-color: #fff;" text="PEDIATRICS" textFill="#e300e3">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </JFXRadioButton>
+                  <Label layoutX="128.0" layoutY="298.0" prefHeight="25.0" prefWidth="171.0" text="Choose your doctor" textFill="#fffefe">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <JFXButton buttonType="RAISED" layoutX="235.0" layoutY="415.0" onAction="#confirmbtn" prefHeight="45.0" prefWidth="128.0" style="-fx-background-color: #fff; -fx-background-radius: 20px;" text="Confirm" textFill="#e300e3">
+                     <font>
+                        <Font name="Microsoft JhengHei UI Bold" size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="390.0" layoutY="415.0" onAction="#logout1" prefHeight="45.0" prefWidth="128.0" style="-fx-background-color: #fff; -fx-background-radius: 20px;" text="Logout" textFill="#e300e3">
+                     <font>
+                        <Font name="Microsoft JhengHei UI Bold" size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <DatePicker fx:id="date" layoutX="128.0" layoutY="191.0" promptText="Choose a date" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane fx:id="docPane" prefHeight="484.0" prefWidth="750.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="492.0" fitWidth="750.0" layoutX="-1.0" layoutY="-4.0" pickOnBounds="true">
+               <image>
+                  <Image url="@pic7.jpeg" />
+               </image>
+               <effect>
+                  <GaussianBlur radius="27.0" />
+               </effect>
+            </ImageView>
+            <Label layoutX="77.0" layoutY="74.0" prefHeight="71.0" prefWidth="561.0" text="Welcome, Dr.Sathvik">
+               <font>
+                  <Font name="Microsoft JhengHei UI Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="77.0" layoutY="184.0" prefHeight="58.0" prefWidth="367.0" text="Your Patients today:  6">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Label>
+            <JFXButton buttonType="RAISED" layoutX="292.0" layoutY="365.0" onAction="#logout2" prefHeight="54.0" prefWidth="166.0" ripplerFill="#e1d7d7" style="-fx-border-color: #ea0707; -fx-border-radius: 20px;" text="Logout" textFill="#ea0707">
+               <font>
+                  <Font size="18.0" />
+               </font></JFXButton>
+            <JFXButton layoutX="535.0" layoutY="29.0" prefHeight="54.0" prefWidth="166.0" style="-fx-border-color: #ea0707; -fx-border-radius: 20px;" text="Apply for Leave" textFill="#ea0707">
+               <font>
+                  <Font size="18.0" />
+               </font></JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
